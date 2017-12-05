@@ -7,4 +7,9 @@ describe('Dinosaur', function() {
     assert.strictEqual(dinosaur.type, "Tyrannosaurus");
   });
 
+  it('Produce offspring', function() {
+    const dinosaur = new Dinosaur("Tyrannosaurus", 2);
+    assert.strictEqual(dinosaur.increaseOffspring(2), 4);
+  });
+
 });
