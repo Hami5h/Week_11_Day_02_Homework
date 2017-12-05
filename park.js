@@ -19,4 +19,15 @@ Park.prototype.removeDinosaur = function(type) {
     }
   }
 
+  Park.prototype.overTwoOffspring = function() {
+    count = 0;
+    for (dinosaur of this.enclosure) {
+      if (dinosaur.offspring > 2) {
+        count++;
+      }
+    }
+    return count;
+  }
+
+
 module.exports = Park;
