@@ -29,5 +29,16 @@ Park.prototype.removeDinosaur = function(type) {
     return count;
   }
 
+  Park.prototype.numberOfDinosaursAfterTwoYears = function(year) {
+    count = 0;
+    for (dinosaur of this.enclosure) {
+      if (dinosaur.offspring > 0){
+        count += dinosaur.offspring;
+        count += 1;
+      }
+    }
+    return count * year;
+  }
+
 
 module.exports = Park;
