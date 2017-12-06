@@ -55,7 +55,7 @@ describe('Park', function() {
     park.addDinosaur(dinosaur2);
     park.addDinosaur(dinosaur3);
     park.addDinosaur(dinosaur4);
-    assert.strictEqual(park.numberOfDinosaursAfterTwoYears(2), 28)
-  })
+    assert.strictEqual(park.numberOfDinosaursAfterTwoYears(2), 24)
+  });
 
 });

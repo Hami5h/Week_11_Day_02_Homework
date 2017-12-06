@@ -33,11 +33,11 @@ Park.prototype.removeDinosaur = function(type) {
     count = 0;
     for (dinosaur of this.enclosure) {
       if (dinosaur.offspring > 0){
-        count += dinosaur.offspring;
+        count += (dinosaur.offspring * year);
         count += 1;
       }
     }
-    return count * year;
+    return count;
   }
 
 
